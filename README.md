@@ -26,7 +26,7 @@ write specs in CoffeeScript but is not built in, neither the CI execution.
 You can write specs and source in CoffeeScript, CI rake task already implemented.
 Best integration with Rails applications.
 
-[jasmine]: jasmine/README.md
-[jasmine_coffee]: jasmine-rails/README.md
-[jasminerice]: jasminerice/README.md
-[jasmine-rails]: jasmine-rails/README.md
+[jasmine]: https://github.com/mariozaizar/boilerplates/tree/master/jasmine/README.md
+[jasmine_coffee]: https://github.com/mariozaizar/boilerplates/tree/master/jasmine-rails/README.md
+[jasminerice]: https://github.com/mariozaizar/boilerplates/tree/master/jasminerice/README.md
+[jasmine-rails]: https://github.com/mariozaizar/boilerplates/tree/master/jasmine-rails/README.md
