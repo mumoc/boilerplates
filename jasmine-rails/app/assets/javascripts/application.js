@@ -10,6 +10,13 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
+
+//= require vendor
+// ~> vendor/assets/javascripts/vendor.js
+
+// require lib (TODO FIXME ERROR)
+// ~> lib/assets/javascripts/lib.js
+
 //= require_tree .
+// ~> app/assets/javascripts/application.js
+

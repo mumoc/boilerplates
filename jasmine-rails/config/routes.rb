@@ -1,4 +1,6 @@
 JasmineRailsCoffeescript::Application.routes.draw do
+  mount JasmineRails::Engine => "/jasmine" unless Rails.env.production?
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
