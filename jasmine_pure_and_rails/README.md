@@ -12,6 +12,7 @@ Steps
 3.- `bundle exec rails generate jasmine:install`.
 4.- Write specs under `spec/javascripts/yourfile_spec.js.
 5.- Run Jasmine by: `bundle exec rake jasmine` and `open http://localhost:8888`
+6.- Run Jasmine report by: `bundle exec rake jasmine:ci`
 
 Info
 ----
