@@ -23,6 +23,13 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'jasmine'
+  gem 'guard'
+  gem 'guard-coffeescript'
+end
+
+group :osx do
+  gem 'rb-fsevent'
+  gem 'ruby_gntp'
 end
 
 # To use ActiveModel has_secure_password

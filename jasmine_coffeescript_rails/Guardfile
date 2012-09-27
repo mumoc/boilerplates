@@ -1,0 +1,12 @@
+# A sample Guardfile
+# More info at https://github.com/guard/guard#readme
+
+# Rails 3.1 there is no need to compile your CoffeeScripts, However, if you
+# would still like to have feedback on the validation of your CoffeeScripts:
+guard 'coffeescript', :input => 'app/assets/javascripts', :noop => true,
+                                                          :hide_success => true
+
+# Compile Jasmine specs from CoffeeScript to Javascript
+guard 'coffeescript', :input => 'spec/javascripts' do
+  watch(%r{^(.+\._spec.js.coffee)$})
+end
