@@ -1,4 +1,4 @@
-CreditCard =
+@CreditCard =
   cleanNumber: (number) ->
     number.replace /[\- ]/g, ""
 
