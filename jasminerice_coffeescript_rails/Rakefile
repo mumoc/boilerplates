@@ -5,3 +5,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 JasminericeCoffeescriptRails::Application.load_tasks
+
+# https://github.com/bradphelan/jasminerice/issues/31
+require 'guard/jasmine/task'
+Guard::JasmineTask.new
