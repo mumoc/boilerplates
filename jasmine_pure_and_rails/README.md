@@ -1,10 +1,13 @@
 Jasmine & Rails
 ===============
 
+Using
+-----
+
 - Using jasmine (1.2.1)
 - Using rails (3.2.8)
 
-Steps
+Setup
 -----
 
 1.- Add the Jasmine Gem.
@@ -14,8 +17,8 @@ Steps
 5.- Run Jasmine by: `bundle exec rake jasmine` and `open http://localhost:8888`
 6.- Run Jasmine report by: `bundle exec rake jasmine:ci`
 
-Info
-----
+More info
+---------
 
 - Based on [Testing JavaScript with Jasmine][railscast261].
 - Valid [credit card numbers][card_numbers] example.

@@ -1,6 +1,13 @@
 Jasmine and Coffeescript (and Guard)
 ====================================
 
+Using
+-----
+
+- rails (3.2.8)
+- guard (1.4.0)
+- guard-jasmine (1.8.3)
+
 Steps
 -----
 
