@@ -1,14 +1,33 @@
-Jasmine and Coffeescript
-========================
+Jasmine and Coffeescript (and Guard)
+====================================
 
 Steps
 -----
 
-1.- Add jasmine gem.
+1.- Add `jasmine` gem.
+2.- Setup jasmine by `bundle exec rails generate jasmine:install`
+3.- Modify `jasmine.yml` to grab `*.js.coffee` source files.
+4.- Run jasmine by `bundle exec rake jasmine:ci` or `bundle exec jasmine`
 
-Note
-----
+With the asset pipeline from Rails +3.1 there is no need to manually compile your (source) CoffeeScripts using Guard or with Guard-Coffeescript gems.
 
-With the introduction of the asset pipeline in Rails 3.1,
-there is no need to compile your CoffeeScripts with Guard-Coffeescript.
+Write jasmine specs in Coffeescript?
+------------------------------------
 
+In other hand, asset pipe line compile spec files in coffeescript. That means that you need to write your tests in plain Javascript, or use Guard to compile your specs into Js.
+
+1.- Add `guard`, `guard-coffeescript` gems
+2.- Setup guard by `bundle exec guard init coffeescript`
+3.- Replace the guard rules with:
+
+```
+guard 'coffeescript', :input => 'app/assets/javascripts', :noop => true,
+                                                          :hide_success => true
+
+guard 'coffeescript', :input => 'spec/javascripts' do
+  watch(%r{^(.+\._spec.js.coffee)$})
+end
+```
+
+4.- Start guard process by `bundle exec guard`
+5.- Run jasmine by `bundle exec rake jasmine:ci` or `bundle exec jasmine`
