@@ -16,8 +16,11 @@ describe("CreditCard", function () {
 		var credit_card = $('#credit_card');
 		credit_card.validateCreditCardNumber();
 
-		credit_card.value('5500 0000 0000 0004').trigger('blur');
-		expect($("#credit_card_error")).toHaveText("Invalid credit card number.");
+		credit_card.val('12312 3123 1231 2313').trigger('blur');
+		expect($("#credit_card_error")).toHaveText("Invalid credit card number");
+
+		credit_card.val('5500 0000 0000 0004').trigger('blur');
+		expect($("#credit_card_error")).toHaveText("ok");
 	});
 
 });
