@@ -1,5 +1,5 @@
-Jasmine (via Jasminerice), CoffeeScript and Rails
-=================================================
+Jasminerice
+===========
 
 Utilizing Jasmine and taking full advantage of the Rails 3.1 asset pipeline.
 With it you can write specs in CoffeeScript, use Fixtures and define Spec Styles.
@@ -11,20 +11,19 @@ Using
 -----
 
 - jasminerice (0.0.9)
-- rails (3.2.8)
 
 Setup
 -----
 
-1.- Add `jasminerice` gem. Uncomment `therubyracer` gem.
-2.- Create `spec/javascripts/spec.js.coffee` with:
+- Add `jasminerice` gem. Uncomment `therubyracer` gem.
+- Create `spec/javascripts/spec.js.coffee` with:
 
 ```
 #= require application
 #= require_tree ./
 ```
 
-4.- Create `spec/javascripts/spec.css` with:
+- Create `spec/javascripts/spec.css` with:
 
 ```
 /*
@@ -32,8 +31,8 @@ Setup
  */
 ```
 
-3.- Include the required source, specs, the fixtures and css.
-4.- Start rails, `rails server` and open `http://localhost:3000/jasmine`
+- Include the required source, specs, the fixtures and css.
+- Start rails, `rails server` and open `http://localhost:3000/jasmine`
 
 Note
 ----

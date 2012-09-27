@@ -1,21 +1,20 @@
-Jasmine & Rails
-===============
+Jasmine
+=======
 
 Using
 -----
 
 - Using jasmine (1.2.1)
-- Using rails (3.2.8)
 
 Setup
 -----
 
-1.- Add the Jasmine Gem.
-2.- `bundle install`.
-3.- `bundle exec rails generate jasmine:install`.
-4.- Write specs under `spec/javascripts/yourfile_spec.js.
-5.- Run Jasmine by: `bundle exec rake jasmine` and `open http://localhost:8888`
-6.- Run Jasmine report by: `bundle exec rake jasmine:ci`
+- Add the Jasmine Gem.
+- `bundle install`.
+- `bundle exec rails generate jasmine:install`.
+- Write specs under `spec/javascripts/yourfile_spec.js.
+- Run Jasmine by: `bundle exec rake jasmine` and `open http://localhost:8888`
+- Run Jasmine report by: `bundle exec rake jasmine:ci`
 
 More info
 ---------
