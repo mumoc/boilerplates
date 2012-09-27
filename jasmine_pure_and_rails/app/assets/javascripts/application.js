@@ -13,21 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-
-(function ($) {
-
-  $.fn.validateCreditCardNumber = function () {
-    return this.each(function () {
-
-      $(this).blur(function () {
-        if(!CreditCard.validNumber(this.value)) {
-          $("#" + this.id + "_error").text("Invalid credit card number");
-        } else {
-          $("#" + this.id + "_error").text("ok");
-        }
-
-      });
-    });
-
-  };
-})(jQuery);

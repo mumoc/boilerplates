@@ -19,3 +19,22 @@ var CreditCard = {
 		return total % 10 === 0;
 	}
 };
+
+// jQuery Plugin to attach the validation to input text objects.
+(function ($) {
+
+  $.fn.validateCreditCardNumber = function () {
+    return this.each(function () {
+
+      $(this).blur(function () {
+        if(!CreditCard.validNumber(this.value)) {
+          $("#" + this.id + "_error").text("Invalid credit card number");
+        } else {
+          $("#" + this.id + "_error").text("ok");
+        }
+
+      });
+    });
+
+  };
+})(jQuery);
