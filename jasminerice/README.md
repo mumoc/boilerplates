@@ -23,6 +23,8 @@ Setup
 #= require_tree ./
 ```
 
+***Note:** you can use spec.js if you want, just change the # for //* 
+
 - Create `spec/javascripts/spec.css` with:
 
 ```
