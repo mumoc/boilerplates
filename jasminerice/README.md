@@ -52,8 +52,18 @@ exceedingly difficult to pollute the global namespace by accident.",
 CI, headless, rake task?
 ------------------------
 
-Include [guard-jasmine][guard-jasmine] gem. And setup a rake task:
-<https://github.com/bradphelan/jasminerice/issues/31>
+- Include guard and [guard-jasmine][guard-jasmine] gem.
+- Add this lines inside your `Rakefile`:
+
+```
+# https://github.com/bradphelan/jasminerice/issues/31
+require 'guard/jasmine/task'
+Guard::JasmineTask.new
+```
+
+More information at: <https://github.com/bradphelan/jasminerice/issues/31>
+
+- Execute this command: `bundle exec rake guard:jasmine`
 
 [jasmine-jquery]: https://github.com/velesin/jasmine-jquery
 [guard-jasmine]: https://github.com/netzpirat/guard-jasmine
