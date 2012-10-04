@@ -52,6 +52,19 @@ asset_paths:
 - To run in command line run `bundle exec jasmine-headless-webkit --color;`
 - To use headless mode run `bundle exec rake jasmine:headless`
 - For Guard support, use [guard-jasmine-headless-webkit][guard-jasmine-headless-webkit] gem.
+
+Add `guard` and `guard-jasmine` gems, then include this inside your Guardfile:
+```
+spec_location = "spec/javascripts/%s_spec"
+
+guard 'jasmine-headless-webkit' do
+  watch(%r{^app/views/.*\.jst$})
+  watch(%r{^public/javascripts/(.*)\.js$}) { |m| newest_js_file(spec_location % m[1]) }
+  watch(%r{^.*/assets/javascripts/(.*)\.(js|coffee)$}) { |m| newest_js_file(spec_location % m[1]) }
+  watch(%r{^spec/javascripts/(.*)_spec\..*}) { |m| newest_js_file(spec_location % m[1]) }
+end
+```
+
 - To run from browser, add this route:
 
 ```
