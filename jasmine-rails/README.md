@@ -51,7 +51,7 @@ asset_paths:
 
 - To run in command line run `bundle exec jasmine-headless-webkit --color;`
 - To use headless mode run `bundle exec rake jasmine:headless`
-- For Guard support, use `[guard-jasmine-headless-webkit][guard-jasmine-headless-webkit]` gem.
+- For Guard support, use [guard-jasmine-headless-webkit][guard-jasmine-headless-webkit] gem.
 - To run from browser, add this route:
 
 ```
