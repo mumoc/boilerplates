@@ -25,6 +25,9 @@ group :development, :test do
   gem 'jasmine-rails'
   gem 'guard'
   gem 'guard-jasmine-headless-webkit'
+
+  # ISSUE https://github.com/johnbintz/jasmine-headless-webkit/issues/101
+  gem 'jasmine-headless-webkit', :git => 'git://github.com/johnbintz/jasmine-headless-webkit.git'
 end
 
 group :osx do
